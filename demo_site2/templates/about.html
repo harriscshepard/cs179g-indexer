@@ -1,0 +1,28 @@
+ {% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>About</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+        <style media="screen">
+      body, html {
+        background-image: url("https://i.ibb.co/FbTWwv1/about-bg.jpg");
+        height: 99%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    {% include 'navbar.html' %}
+    <div class="text">
+      <h1>About</h1>
+      <div class="person buffer">
+        This is a website to search for products across multiple shopping websites. We also analyzed the product data to give statistics on specific brands and categories.
+      </div>
+    </div>
+  </body>
+</html>
+

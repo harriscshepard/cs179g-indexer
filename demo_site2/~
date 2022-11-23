@@ -1,0 +1,28 @@
+ {% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+    <base target="_PARENT">
+  </head>
+  <body>
+    <div class="query">
+    {% for element in query_list %}
+      <div class="person box">
+	  <div class="search">
+	    <div class"query_name">
+	      {{element}}
+	    </div>
+	    <div class"query_price">
+	      {{element.price}}
+            </div>
+	  </div>
+	</a>
+      </div>	      
+    {% endfor %}
+    </div>
+  </body>
+</html>
+

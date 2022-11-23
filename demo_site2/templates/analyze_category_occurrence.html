@@ -1,0 +1,37 @@
+ {% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Product</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <style media="screen">
+      body, html {
+        background-image: url("https://i.ibb.co/pfymdGW/ramiro-mendes-s-MCBEI5zkqc-unsplash.jpg");
+        height: 90%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    {% include 'navbar.html' %}
+    <div class="text">
+      <div class="bound">
+<table>
+<tr>
+<th>Category</th>
+<th>Count</th>
+</tr>
+        {% for c in categories %}
+<tr>
+<td>{{ c.word }}</td>
+<td>{{ c.count }}</td>
+</tr>
+        {% endfor %}
+</table>
+      </div>
+    </div>
+  </body>
+</html>

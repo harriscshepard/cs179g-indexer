@@ -1,0 +1,38 @@
+ {% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Product</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <style media="screen">
+      body, html {
+        background-image: url("https://i.ibb.co/pfymdGW/ramiro-mendes-s-MCBEI5zkqc-unsplash.jpg");
+        height: 90%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    {% include 'navbar.html' %}
+    <div class="text">
+      <div class="bound">
+        <div class="product image">
+          <a href="http://www.google.com" target="_blank">
+            <img src="https://i.ibb.co/3S0Hp65/toy-bg.jpg" alt="toys">
+          </a>
+        </div>
+        <div class="description">
+          <div class="name">{{ product.0.name }}</div>
+          <h3>${{ product.0.price }}</h3>
+          <div class="words">
+            {{ product.0.description }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

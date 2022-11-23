@@ -1,0 +1,55 @@
+ {% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contributions</title>
+        <link rel="stylesheet" href="{% static 'style.css' %}" />
+ 	<style media="screen">
+      body, html {
+        background-image: url("https://i.ibb.co/x8VTrbC/contributions-bg.jpg");
+        height: 99%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    {% include 'navbar.html' %}
+    <div class="text">
+      <h1>Contributions</h1>
+      <div class="segments home">
+        <div class="person">
+          <div class="cont">
+            <h2>Otnie</h2>
+            <li>created javascript and python code for browser queries</li>
+            <li>crawled websites for data</li>
+          </div>
+        </div>
+        <div class="person">
+          <div class="cont">
+            <h2>Dustin</h2>
+            <li>created pyspark sql code</li>
+            <li>crawled websites for data</li>
+          </div>
+        </div>
+        <div class="person">
+          <div class="cont">
+            <h2>Harris</h2>
+            <li>handled transfer of crawled data</li>
+            <li>created queries</li>
+          </div>
+        </div>
+        <div class="person">
+          <div class="cont">
+            <h2>Jourdon</h2>
+            <li>project idea</li>
+            <li>created html and css for website</li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
